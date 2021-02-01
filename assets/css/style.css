@@ -12,10 +12,11 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Kumbh sans", sans-serif;
+    font-size: 18px;
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-color: hsl(185, 75%, 39%);
     background-repeat: no-repeat;
-    background-position: top -525px left -550px, bottom -520px right -550px;
+    background-position: top -525px left -320px, bottom -520px right -320px;
     height: 100vh;
     overflow: hidden;
 }
@@ -23,8 +24,8 @@ body {
 main {
     background-color: #ffffff;
     border-radius: 15px;
-    width: 326px;
-    height: 374px;
+    width: 350px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,7 +47,7 @@ main {
 }
 
 .card-top {
-    width: 326px;
+    width: 350px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -89,7 +90,7 @@ main {
 hr {
     border: none;
     height: 1px;
-    background-color: hsl(227, 10%, 46%);
+    background-color: hsl(227, 5%, 80%);
     width: auto;
     margin-top: 20px;
 }
@@ -114,6 +115,20 @@ hr {
     font-size: 12px;
     letter-spacing: 2px;
     padding-top: 10px;
+}
+
+/*------Media Queries------*/
+
+@media (max-width: 375px) {
+    
+    main {
+        width: 280px;
+        height: 350px;
+    }
+
+    .card-top {
+        width: 100%;
+    }
 }
 
 /*----------- Footer -----------*/
