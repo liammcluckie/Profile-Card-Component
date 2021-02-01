@@ -57,7 +57,15 @@ main {
     border: 5px solid #ffffff;
 }
 
-/*-------Profile Card Text-------*/
+/*-------Profile Card Main Text-------*/
+
+.main-text {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    top: -15%;
+}
 
 #name  {
     font-size: 18px;
@@ -68,8 +76,46 @@ main {
     font-size: 18px;
     font-weight: 400;
     color: hsl(227, 10%, 46%);
-    margin-bottom: 200px;
 }
+
+#location {
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: -10%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: hsl(227, 10%, 46%);
+    width: auto;
+    margin-top: 20px;
+}
+
+/*-------Profile Card Stats-------*/
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.stats-numbers {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.stats-type {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+}
+
 /*----------- Footer -----------*/
 
 .attribution { 
